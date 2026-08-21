@@ -31,7 +31,7 @@ export function Footer() {
           <div className="mt-4 space-y-3 text-sm text-neutral-400">
             <div>09021354107</div>
             <div>info@khesht.co</div>
-            <div>تهران، نیاوران</div>
+            <div>تهران، نیاوران، باهنر، قبل سعیدی، پلاک ۶۲، واحد ۶</div>
           </div>
         </div>
       </div>

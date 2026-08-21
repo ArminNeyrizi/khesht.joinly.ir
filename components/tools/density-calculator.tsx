@@ -144,7 +144,7 @@ export default function DensityCalculator() {
             <div className="order-1 flex h-[300px] items-end justify-center lg:order-2 lg:h-[380px]">
               <div className="relative h-full w-full overflow-hidden">
                 <img
-                  src="/images/density-building.png"
+                  src="/images/density-building.webp"
                   alt="محاسبه تراکم ساختمان"
                   className="h-full w-full object-contain object-bottom"
                 />

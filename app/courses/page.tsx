@@ -3,37 +3,37 @@ const courses = [
   [
     "بوتکمپ اجرای ساختمان",
     "اجرا",
-    "/images/execution.png",
+    "/images/execution.webp",
     "۳,۹۰۰,۰۰۰",
   ],
   [
     "نظارت و کنترل پروژه",
     "نظارت",
-    "/images/supervision.png",
+    "/images/supervision.webp",
     "۲,۹۰۰,۰۰۰",
   ],
   [
     "طراحی معماری و سازه",
     "طراحی",
-    "/images/design.png",
+    "/images/design.webp",
     "۳,۵۰۰,۰۰۰",
   ],
   [
     "نقشه‌کشی حرفه‌ای AutoCAD",
     "نقشه‌کشی",
-    "/images/autocad.png",
+    "/images/autocad.webp",
     "۲,۲۰۰,۰۰۰",
   ],
   [
     "Revit و BIM",
     "نقشه‌کشی",
-    "/images/bim.png",
+    "/images/bim.webp",
     "۲,۹۰۰,۰۰۰",
   ],
   [
     "ETABS کاربردی",
     "طراحی",
-    "/images/etabs.png",
+    "/images/etabs.webp",
     "۲,۵۰۰,۰۰۰",
   ],
 ];

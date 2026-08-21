@@ -7,7 +7,7 @@ export default function Course() {
       <div className="grid gap-10 lg:grid-cols-[1.15fr_.85fr] lg:items-start">
         <div>
           <img
-            src="/images/execution.png"
+            src="/images/execution.webp"
             alt="بوتکمپ اجرای ساختمان"
             className="h-[480px] w-full rounded-[28px] object-cover"
           />

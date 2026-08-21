@@ -16,19 +16,19 @@ const courses = [
   [
     "بوتکمپ اجرای ساختمان",
     "اجرا",
-    "/images/execution.png",
+    "/images/execution.webp",
     "۳,۹۰۰,۰۰۰",
   ],
   [
     "نظارت و کنترل پروژه",
     "نظارت",
-    "/images/supervision.png",
+    "/images/supervision.webp",
     "۲,۹۰۰,۰۰۰",
   ],
   [
     "طراحی معماری و سازه",
     "طراحی",
-    "/images/design.png",
+    "/images/design.webp",
     "۳,۵۰۰,۰۰۰",
   ],
 ];
@@ -39,7 +39,7 @@ export default function Home() {
         <div className="order-2 lg:order-1">
           <div className="relative overflow-hidden rounded-[28px] bg-neutral-900 shadow-soft">
             <img
-              src="/images/hero-building.png"
+              src="/images/hero-building.webp"
               alt="ساختمان"
               className="h-[520px] w-full object-cover opacity-75"
             />

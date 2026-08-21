@@ -1,61 +1,77 @@
 import { CourseCard } from "@/components/course-card";
+
 const courses = [
-  [
-    "بوتکمپ اجرای ساختمان",
-    "اجرا",
-    "/images/execution.webp",
-    "۳,۹۰۰,۰۰۰",
-  ],
-  [
-    "نظارت و کنترل پروژه",
-    "نظارت",
-    "/images/supervision.webp",
-    "۲,۹۰۰,۰۰۰",
-  ],
-  [
-    "طراحی معماری و سازه",
-    "طراحی",
-    "/images/design.webp",
-    "۳,۵۰۰,۰۰۰",
-  ],
-  [
-    "نقشه‌کشی حرفه‌ای AutoCAD",
-    "نقشه‌کشی",
-    "/images/autocad.webp",
-    "۲,۲۰۰,۰۰۰",
-  ],
-  [
-    "Revit و BIM",
-    "نقشه‌کشی",
-    "/images/bim.webp",
-    "۲,۹۰۰,۰۰۰",
-  ],
-  [
-    "ETABS کاربردی",
-    "طراحی",
-    "/images/etabs.webp",
-    "۲,۵۰۰,۰۰۰",
-  ],
+  {
+    title: "بوتکمپ اجرای ساختمان",
+    category: "اجرا",
+    img: "/images/execution.webp",
+    price: "۳,۹۰۰,۰۰۰",
+    slug: "execution",
+  },
+  {
+    title: "نظارت و کنترل پروژه",
+    category: "نظارت",
+    img: "/images/supervision.webp",
+    price: "۲,۹۰۰,۰۰۰",
+    slug: "supervision",
+  },
+  {
+    title: "طراحی معماری و سازه",
+    category: "طراحی",
+    img: "/images/design.webp",
+    price: "۳,۵۰۰,۰۰۰",
+    slug: "design",
+  },
+  {
+    title: "نقشه‌کشی حرفه‌ای AutoCAD",
+    category: "نقشه‌کشی",
+    img: "/images/autocad.webp",
+    price: "۲,۲۰۰,۰۰۰",
+    slug: "autocad",
+  },
+  {
+    title: "Revit و BIM",
+    category: "نقشه‌کشی",
+    img: "/images/bim.webp",
+    price: "۲,۹۰۰,۰۰۰",
+    slug: "revit-bim",
+  },
+  {
+    title: "ETABS کاربردی",
+    category: "طراحی",
+    img: "/images/etabs.webp",
+    price: "۲,۵۰۰,۰۰۰",
+    slug: "etabs",
+  },
 ];
+
 export default function Courses() {
   return (
     <section className="container py-14">
       <div className="mx-auto max-w-2xl text-center">
-        <span className="text-sm font-bold text-[#8f211d]">مسیر یادگیری</span>
-        <h1 className="mt-3 text-4xl font-black">دوره‌های آموزشی</h1>
+        <span className="text-sm font-bold text-[#8f211d]">
+          مسیر یادگیری
+        </span>
+
+        <h1 className="mt-3 text-4xl font-black">
+          دوره‌های آموزشی
+        </h1>
+
         <p className="mt-4 leading-8 text-neutral-500">
           دوره را بر اساس مهارتی که برای ورود یا رشد در صنعت ساختمان نیاز داری
           انتخاب کن.
         </p>
       </div>
+
       <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-        {courses.map((c) => (
+        {courses.map((course) => (
           <CourseCard
-            key={c[0]}
-            title={c[0]}
-            category={c[1]}
-            img={c[2]}
-            price={c[3]}
+            key={course.slug}
+            title={course.title}
+            category={course.category}
+            img={course.img}
+            price={course.price}
+            slug={course.slug}
           />
         ))}
       </div>

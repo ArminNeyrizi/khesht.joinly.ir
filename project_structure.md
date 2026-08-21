@@ -1,14 +1,14 @@
 # 📁 khesht.joinly.ir - Project Structure
 
-*Generated on: 8/21/2026, 4:36:45 PM*
+*Generated on: 8/21/2026, 11:08:00 PM*
 
 ## 📋 Quick Overview
 
 | Metric | Value |
 |--------|-------|
-| 📄 Total Files | 29 |
-| 📁 Total Folders | 11 |
-| 🌳 Max Depth | 2 levels |
+| 📄 Total Files | 42 |
+| 📁 Total Folders | 15 |
+| 🌳 Max Depth | 3 levels |
 | 🛠️ Tech Stack | React, Next.js, TypeScript, CSS, Node.js |
 
 ## ⭐ Important Files
@@ -24,34 +24,35 @@
 
 ### By File Type
 
-- ⚛️ **.tsx** (React TypeScript files): 11 files (37.9%)
-- 🔤 **.ttf** (TrueType fonts): 6 files (20.7%)
-- ⚙️ **.json** (JSON files): 4 files (13.8%)
-- 🔷 **.ts** (TypeScript files): 3 files (10.3%)
-- 📄 **.** (Other files): 1 files (3.4%)
-- 🚫 **.gitignore** (Git ignore): 1 files (3.4%)
-- 📖 **.md** (Markdown files): 1 files (3.4%)
-- 🎨 **.css** (Stylesheets): 1 files (3.4%)
-- 📄 **.mjs** (Other files): 1 files (3.4%)
+- ⚛️ **.tsx** (React TypeScript files): 15 files (35.7%)
+- 🖼️ **.webp** (WebP images): 8 files (19.0%)
+- 🔤 **.ttf** (TrueType fonts): 6 files (14.3%)
+- ⚙️ **.json** (JSON files): 4 files (9.5%)
+- 🔷 **.ts** (TypeScript files): 3 files (7.1%)
+- 📖 **.md** (Markdown files): 2 files (4.8%)
+- 📄 **.** (Other files): 1 files (2.4%)
+- 🚫 **.gitignore** (Git ignore): 1 files (2.4%)
+- 🎨 **.css** (Stylesheets): 1 files (2.4%)
+- 📄 **.mjs** (Other files): 1 files (2.4%)
 
 ### By Category
 
-- **React**: 11 files (37.9%)
-- **Assets**: 6 files (20.7%)
-- **Config**: 4 files (13.8%)
-- **TypeScript**: 3 files (10.3%)
-- **Other**: 2 files (6.9%)
-- **DevOps**: 1 files (3.4%)
-- **Docs**: 1 files (3.4%)
-- **Styles**: 1 files (3.4%)
+- **React**: 15 files (35.7%)
+- **Assets**: 14 files (33.3%)
+- **Config**: 4 files (9.5%)
+- **TypeScript**: 3 files (7.1%)
+- **Other**: 2 files (4.8%)
+- **Docs**: 2 files (4.8%)
+- **DevOps**: 1 files (2.4%)
+- **Styles**: 1 files (2.4%)
 
 ### 📁 Largest Directories
 
-- **root**: 29 files
-- **app**: 8 files
-- **public/Font**: 6 files
-- **public**: 6 files
-- **components**: 4 files
+- **root**: 42 files
+- **public**: 14 files
+- **app**: 10 files
+- **public/images**: 8 files
+- **components**: 6 files
 
 ## 🌳 Directory Structure
 
@@ -72,11 +73,18 @@ khesht.joinly.ir/
 │   │   └── ⚛️ page.tsx
 │   ├── 🎨 globals.css
 │   ├── ⚛️ layout.tsx
-│   └── ⚛️ page.tsx
+│   ├── ⚛️ page.tsx
+│   └── 📂 tools/
+│   │   ├── 📂 density/
+│   │   │   └── ⚛️ page.tsx
+│   │   └── ⚛️ page.tsx
 ├── 🧩 components/
 │   ├── ⚛️ course-card.tsx
 │   ├── ⚛️ footer.tsx
 │   ├── ⚛️ header.tsx
+│   ├── 📂 tools/
+│   │   ├── ⚛️ density-calculator.tsx
+│   │   └── ⚛️ tool-card.tsx
 │   └── 🎨 ui/
 │   │   └── ⚛️ button.tsx
 ├── ⚙️ components.json
@@ -87,14 +95,24 @@ khesht.joinly.ir/
 ├── 🟡 🔒 **package-lock.json**
 ├── 🔴 📦 **package.json**
 ├── 📄 postcss.config.mjs
+├── 📖 project_structure.md
 ├── 🌐 public/
-│   └── 📂 Font/
+│   ├── 📂 Font/
 │   │   ├── 🔤 Kook-Bold.ttf
 │   │   ├── 🔤 Kook-ExtraBold.ttf
 │   │   ├── 🔤 Kook-ExtraLight.ttf
 │   │   ├── 🔤 Kook-Light.ttf
 │   │   ├── 🔤 Kook-Medium.ttf
 │   │   └── 🔤 Kook-Regular.ttf
+│   └── 🖼️ images/
+│   │   ├── 🖼️ autocad.webp
+│   │   ├── 🖼️ bim.webp
+│   │   ├── 🖼️ density-building.webp
+│   │   ├── 🖼️ design.webp
+│   │   ├── 🖼️ etabs.webp
+│   │   ├── 🖼️ execution.webp
+│   │   ├── 🖼️ hero-building.webp
+│   │   └── 🖼️ supervision.webp
 ├── 🔴 📖 **README.md**
 └── 🟡 🔷 **tsconfig.json**
 ```
@@ -110,6 +128,7 @@ khesht.joinly.ir/
 - ⚙️ Config: JSON files
 - 🔷 TypeScript: TypeScript files
 - 🔤 Assets: TrueType fonts
+- 🖼️ Assets: WebP images
 
 ### Importance Levels
 - 🔴 Critical: Essential project files

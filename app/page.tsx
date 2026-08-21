@@ -10,31 +10,38 @@ import {
   Clock3,
   Award,
 } from "lucide-react";
+
 import { Button } from "@/components/ui/button";
 import { CourseCard } from "@/components/course-card";
+
 const courses = [
-  [
-    "بوتکمپ اجرای ساختمان",
-    "اجرا",
-    "/images/execution.webp",
-    "۳,۹۰۰,۰۰۰",
-  ],
-  [
-    "نظارت و کنترل پروژه",
-    "نظارت",
-    "/images/supervision.webp",
-    "۲,۹۰۰,۰۰۰",
-  ],
-  [
-    "طراحی معماری و سازه",
-    "طراحی",
-    "/images/design.webp",
-    "۳,۵۰۰,۰۰۰",
-  ],
+  {
+    title: "بوتکمپ اجرای ساختمان",
+    category: "اجرا",
+    img: "/images/execution.webp",
+    price: "۵,۵۰۰,۰۰۰",
+    slug: "execution",
+  },
+  {
+    title: "بوتکمپ نظارت ساختمان",
+    category: "نظارت",
+    img: "/images/supervision.webp",
+    price: "۵,۵۰۰,۰۰۰",
+    slug: "supervision",
+  },
+  {
+    title: "بوتکمپ طراحی ساختمان",
+    category: "طراحی",
+    img: "/images/design.webp",
+    price: "۵,۵۰۰,۰۰۰",
+    slug: "design",
+  },
 ];
+
 export default function Home() {
   return (
     <div>
+      {/* HERO */}
       <section className="container grid gap-10 py-12 lg:grid-cols-2 lg:items-center">
         <div className="order-2 lg:order-1">
           <div className="relative overflow-hidden rounded-[28px] bg-neutral-900 shadow-soft">
@@ -43,16 +50,21 @@ export default function Home() {
               alt="ساختمان"
               className="h-[520px] w-full object-cover opacity-75"
             />
+
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
+
             <div className="absolute bottom-6 right-6 left-6 grid gap-3 sm:grid-cols-2">
               <div className="rounded-2xl bg-[#8f211d]/95 p-5 text-white">
                 <b>آموزش پروژه‌محور</b>
+
                 <p className="mt-2 text-xs text-white/70">
                   یادگیری با سناریوهای واقعی صنعت
                 </p>
               </div>
+
               <div className="rounded-2xl bg-white/95 p-5">
                 <b>استاد متخصص</b>
+
                 <p className="mt-2 text-xs text-neutral-500">
                   تجربه واقعی، نه فقط آموزش تئوری
                 </p>
@@ -60,29 +72,36 @@ export default function Home() {
             </div>
           </div>
         </div>
+
         <div className="order-1 lg:order-2">
           <span className="inline-flex rounded-full border border-[#d9b4b0] px-4 py-2 text-sm font-bold text-[#8f211d]">
             آکادمی تخصصی صنعت ساختمان
           </span>
+
           <h1 className="mt-6 text-balance text-5xl font-black leading-[1.2] md:text-7xl">
             از یادگیری
             <br />
             <span className="text-[#8f211d]">تا کار واقعی</span>
           </h1>
+
           <p className="mt-6 max-w-xl text-lg leading-9 text-neutral-500">
             مهارت‌هایی یاد بگیر که در پروژه واقعی ساختمان به کار می‌آیند؛ از
             اجرا و نظارت تا طراحی و نقشه‌کشی.
           </p>
+
           <div className="mt-8 flex flex-wrap gap-3">
             <Button asChild size="lg">
               <Link href="/courses">
-                مشاهده دوره‌ها <ArrowLeft size={18} />
+                مشاهده دوره‌ها
+                <ArrowLeft size={18} />
               </Link>
             </Button>
+
             <Button asChild size="lg" variant="outline">
               <Link href="/contact">مشاوره رایگان</Link>
             </Button>
           </div>
+
           <div className="mt-10 grid grid-cols-2 gap-5 border-t pt-8 sm:grid-cols-4">
             <Stat icon={<Users />} n="+۲۰۰۰" t="هنرجوی موفق" />
             <Stat icon={<Clock3 />} n="+۵۰۰۰" t="ساعت آموزش" />
@@ -91,51 +110,67 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* COURSES */}
       <section className="container py-16">
         <div className="mb-8 flex items-end justify-between">
           <div>
             <span className="text-sm font-bold text-[#8f211d]">
               دوره‌های آموزشی
             </span>
+
             <h2 className="mt-2 text-3xl font-black">
               چه مهارتی می‌خواهی یاد بگیری؟
             </h2>
           </div>
-          <Link href="/courses" className="text-sm font-bold text-[#8f211d]">
+
+          <Link
+            href="/courses"
+            className="text-sm font-bold text-[#8f211d]"
+          >
             مشاهده همه ←
           </Link>
         </div>
+
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {courses.map((c) => (
+          {courses.map((course) => (
             <CourseCard
-              key={c[0]}
-              title={c[0]}
-              category={c[1]}
-              img={c[2]}
-              price={c[3]}
+              key={course.slug}
+              title={course.title}
+              category={course.category}
+              img={course.img}
+              price={course.price}
+              slug={course.slug}
             />
           ))}
         </div>
       </section>
+
+      {/* BOOTCAMP */}
       <section className="container py-10">
         <div className="grid-bg overflow-hidden rounded-[28px] border bg-[#faf8f6] p-8 md:p-12">
           <div className="max-w-2xl">
             <span className="text-sm font-bold text-[#8f211d]">
               بوتکمپ‌های تخصصی
             </span>
+
             <h2 className="mt-3 text-3xl font-black">
               برای ورود سریع‌تر به بازار کار آماده شو
             </h2>
+
             <p className="mt-4 leading-8 text-neutral-500">
               مسیر فشرده، پروژه‌محور و همراه با منتور؛ برای کسی که می‌خواهد
               سریع‌تر از آموزش به تجربه واقعی برسد.
             </p>
+
             <Button asChild className="mt-6">
               <Link href="/courses">مشاهده بوتکمپ‌ها</Link>
             </Button>
           </div>
         </div>
       </section>
+
+      {/* CATEGORIES */}
       <section className="container py-16">
         <div className="grid gap-5 md:grid-cols-4">
           {[
@@ -144,11 +179,19 @@ export default function Home() {
             [PenTool, "طراحی", "طراحی معماری و سازه"],
             [Ruler, "نقشه‌کشی", "AutoCAD، Revit و BIM"],
           ].map(([I, t, d]) => {
-            const Icon = I as any;
+            const Icon = I as React.ElementType;
+
             return (
-              <div key={t as string} className="rounded-2xl border p-6">
+              <div
+                key={t as string}
+                className="rounded-2xl border p-6"
+              >
                 <Icon className="text-[#8f211d]" />
-                <h3 className="mt-5 font-black">{t as string}</h3>
+
+                <h3 className="mt-5 font-black">
+                  {t as string}
+                </h3>
+
                 <p className="mt-2 text-sm leading-6 text-neutral-500">
                   {d as string}
                 </p>
@@ -160,12 +203,27 @@ export default function Home() {
     </div>
   );
 }
-function Stat({ icon, n, t }: { icon: React.ReactNode; n: string; t: string }) {
+
+function Stat({
+  icon,
+  n,
+  t,
+}: {
+  icon: React.ReactNode;
+  n: string;
+  t: string;
+}) {
   return (
     <div className="text-center">
-      <div className="mx-auto mb-2 w-fit text-[#8f211d]">{icon}</div>
+      <div className="mx-auto mb-2 w-fit text-[#8f211d]">
+        {icon}
+      </div>
+
       <b className="block text-xl">{n}</b>
-      <span className="text-xs text-neutral-500">{t}</span>
+
+      <span className="text-xs text-neutral-500">
+        {t}
+      </span>
     </div>
   );
 }

@@ -37,17 +37,22 @@ export default function DensityCalculator() {
       landArea > 0 ? (landArea * densityPercent) / 100 : 0;
 
     // تعداد طبقات مجاز
+    // همیشه به عدد صحیح و رو به بالا گرد می‌شود
     const floors =
-      occupiedArea > 0 ? totalBuiltArea / occupiedArea : 0;
-
-    // ارتفاع تقریبی ساختمان
-    const buildingHeight = floors * 3.2;
+      occupiedArea > 0 ? Math.ceil(totalBuiltArea / occupiedArea) : 0;
 
     /*
-      در این نسخه، حدود درز انقطاع به صورت 1 درصد ارتفاع ساختمان
-      محاسبه می‌شود.
+      درز انقطاع:
+      تا ۴ طبقه: ۶ سانتی‌متر
+      ۵ و ۶ طبقه: ۸ سانتی‌متر
+      بیشتر از ۶ طبقه: ۱۰ سانتی‌متر
     */
-    const separationJoint = buildingHeight;
+    const separationJoint =
+      floors <= 4
+        ? 6
+        : floors <= 6
+          ? 8
+          : 10;
 
     return {
       length,
@@ -58,7 +63,6 @@ export default function DensityCalculator() {
       occupiedArea,
       totalBuiltArea,
       floors,
-      buildingHeight,
       separationJoint,
     };
   }, [landLength, landWidth, occupancy, density]);
@@ -99,7 +103,10 @@ export default function DensityCalculator() {
 
             <ChevronLeft size={13} />
 
-            <a href="/tools" className="transition hover:text-white">
+            <a
+              href="/tools"
+              className="transition hover:text-white"
+            >
               ابزارها
             </a>
 
@@ -258,7 +265,7 @@ export default function DensityCalculator() {
               {/* طبقات */}
               <ResultCard
                 title="تعداد طبقات مجاز"
-                value={formatNumber(calculation.floors)}
+                value={formatInteger(calculation.floors)}
                 unit="طبقه"
                 icon={<Ruler size={27} />}
               />
@@ -266,7 +273,7 @@ export default function DensityCalculator() {
               {/* درز انقطاع */}
               <ResultCard
                 title="حدود درز انقطاع"
-                value={formatNumber(calculation.separationJoint)}
+                value={formatInteger(calculation.separationJoint)}
                 unit="سانتی‌متر"
                 icon={<Scale size={27} />}
                 valueClassName="text-[#d9342b]"
@@ -303,8 +310,9 @@ export default function DensityCalculator() {
                 <Info size={18} className="mt-1 shrink-0" />
 
                 <p>
-                  برای محاسبه درز انقطاع، ارتفاع هر طبقه
-                  ۳.۲۰ متر درنظر گرفته شده است.
+                  برای محاسبه درز انقطاع، تا ۴ طبقه ۶ سانتی‌متر،
+                  برای ۵ و ۶ طبقه ۸ سانتی‌متر و برای بیشتر از ۶
+                  طبقه ۱۰ سانتی‌متر درنظر گرفته شده است.
                 </p>
               </div>
             </div>
@@ -319,7 +327,7 @@ export default function DensityCalculator() {
               "مساحت زمین از حاصل‌ضرب طول و عرض زمین به دست می‌آید.",
               "سطح اشغال از ضرب مساحت زمین در ضریب سطح اشغال محاسبه می‌شود.",
               "زیربنای کل از ضرب مساحت زمین در درصد تراکم به دست می‌آید.",
-              "تعداد طبقات مجاز بر اساس نسبت زیربنای کل به سطح اشغال محاسبه می‌شود.",
+              "تعداد طبقات مجاز بر اساس نسبت زیربنای کل به سطح اشغال محاسبه می‌شود و به عدد صحیح رو به بالا گرد می‌شود.",
             ]}
           />
 
@@ -328,7 +336,8 @@ export default function DensityCalculator() {
             items={[
               "سطح اشغال: حداکثر مساحت مجاز ساخت‌وساز در طبقه همکف نسبت به مساحت زمین.",
               "زیربنای کل: مجموع مساحت زیربناهایی که بر اساس درصد تراکم مجاز هستند.",
-              "تعداد طبقات مجاز: نسبت زیربنای کل مجاز به سطح اشغال.",
+              "تعداد طبقات مجاز: نسبت زیربنای کل مجاز به سطح اشغال که برای نمایش به عدد صحیح رو به بالا گرد می‌شود.",
+              "درز انقطاع: تا ۴ طبقه ۶ سانتی‌متر، برای ۵ و ۶ طبقه ۸ سانتی‌متر و برای بیشتر از ۶ طبقه ۱۰ سانتی‌متر.",
             ]}
           />
         </div>
@@ -367,7 +376,7 @@ export default function DensityCalculator() {
               </div>
 
               <small>
-                زیربنای کل ÷ سطح اشغال
+                زیربنای کل ÷ سطح اشغال → گرد کردن رو به بالا
               </small>
             </div>
           </div>

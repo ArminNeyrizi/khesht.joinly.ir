@@ -16,19 +16,19 @@ const courses = [
   [
     "بوتکمپ اجرای ساختمان",
     "اجرا",
-    "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=80",
+    "/images/execution.png",
     "۳,۹۰۰,۰۰۰",
   ],
   [
     "نظارت و کنترل پروژه",
     "نظارت",
-    "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=80",
+    "/images/supervision.png",
     "۲,۹۰۰,۰۰۰",
   ],
   [
     "طراحی معماری و سازه",
     "طراحی",
-    "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=80",
+    "/images/design.png",
     "۳,۵۰۰,۰۰۰",
   ],
 ];
@@ -39,7 +39,7 @@ export default function Home() {
         <div className="order-2 lg:order-1">
           <div className="relative overflow-hidden rounded-[28px] bg-neutral-900 shadow-soft">
             <img
-              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=85"
+              src="/images/hero-building.png"
               alt="ساختمان"
               className="h-[520px] w-full object-cover opacity-75"
             />
@@ -67,7 +67,7 @@ export default function Home() {
           <h1 className="mt-6 text-balance text-5xl font-black leading-[1.2] md:text-7xl">
             از یادگیری
             <br />
-            <span className="text-[#8f211d]">تا استخدام</span>
+            <span className="text-[#8f211d]">تا کار واقعی</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-9 text-neutral-500">
             مهارت‌هایی یاد بگیر که در پروژه واقعی ساختمان به کار می‌آیند؛ از

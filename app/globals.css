@@ -18,7 +18,6 @@ body {
   margin: 0;
   background: white;
   color: var(--ink);
-  font-family: Tahoma, Arial, sans-serif;
 }
 a {
   text-decoration: none;

@@ -29,8 +29,8 @@ export function Footer() {
         <div>
           <b>ارتباط با ما</b>
           <div className="mt-4 space-y-3 text-sm text-neutral-400">
-            <div>021-91098900</div>
-            <div>info@khesht.academy</div>
+            <div>09021354107</div>
+            <div>info@khesht.co</div>
             <div>تهران، نیاوران</div>
           </div>
         </div>

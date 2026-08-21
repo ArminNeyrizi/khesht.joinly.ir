@@ -31,7 +31,7 @@ export function CourseCard({
           <b className="text-[#8f211d]">{price} تومان</b>
           <Link
             href="/course"
-            className="rounded-lg bg-[#171717] px-4 py-2 text-xs font-bold text-white"
+            className="rounded-lg bg-[#171717] px-4 py-2 text-xs font-bold !text-white"
           >
             مشاهده دوره
           </Link>

@@ -3,32 +3,32 @@ const posts = [
   [
     "راهنمای انتخاب نرم‌افزار مناسب برای طراحی معماری",
     "طراحی",
-    "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80",
+    "/images/man-design.avif",
   ],
   [
     "۱۰ اشتباه رایج در نظارت ساختمان",
     "نظارت",
-    "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=80",
+    "/images/supervisors.avif",
   ],
   [
     "چک‌لیست اجرای کامل اسکلت بتنی",
     "اجرا",
-    "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80",
+    "/images/concrete.avif",
   ],
   [
     "SAPS و ETABS؛ کدام را یاد بگیریم؟",
     "طراحی",
-    "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=900&q=80",
+    "/images/designer-girl.avif",
   ],
   [
     "۵ نکته برای مدیریت بهتر پروژه",
     "مدیریت پروژه",
-    "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80",
+    "/images/beautiful-cafe.avif",
   ],
   [
     "چطور وارد صنعت ساختمان شویم؟",
     "مسیر شغلی",
-    "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80",
+    "/images/modern-buildings.avif",
   ],
 ];
 export default function Blog() {

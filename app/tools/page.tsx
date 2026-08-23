@@ -37,6 +37,26 @@ export default function ToolsPage() {
             </div>
           </Link>
         </div>
+
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <Link
+            href="/tools/pre-construction"
+            className="rounded-2xl border border-[#e9e5e2] bg-white p-6 transition hover:-translate-y-1 hover:shadow-soft"
+          >
+            <h2 className="text-xl font-extrabold">
+             چک‌لیست اقدامات پیش از شروع عملیات ساختمانی
+            </h2>
+
+            <p className="mt-3 text-sm leading-7 text-neutral-500">
+              این چک‌لیست به شما کمک می‌کند قبل از شروع پروژه ساختمانی، تمام موارد مهم را بررسی و کنترل کنید.
+            </p>
+
+            <div className="mt-6 font-bold text-[#8f211d]">
+              استفاده از ابزار ←
+            </div>
+          </Link>
+        </div>
+
       </section>
     </main>
   );

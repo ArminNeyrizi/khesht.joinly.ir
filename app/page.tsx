@@ -19,22 +19,132 @@ const courses = [
     title: "بوتکمپ اجرای ساختمان",
     category: "اجرا",
     img: "/images/execution.webp",
-    price: "۵,۵۰۰,۰۰۰",
+    price: "۳۳,۶۰۰,۰۰۰",
+    originalPrice: "۵۷,۶۰۰,۰۰۰",
+    duration: "۹۶ ساعت",
+    sessions: "۲۴ جلسه",
     slug: "execution",
   },
+
   {
-    title: "بوتکمپ نظارت ساختمان",
+    title: "نظارت و کنترل پروژه",
     category: "نظارت",
     img: "/images/supervision.webp",
-    price: "۵,۵۰۰,۰۰۰",
+    price: "۲۵,۲۰۰,۰۰۰",
+    originalPrice: "۴۳,۲۰۰,۰۰۰",
+    duration: "۷۲ ساعت",
+    sessions: "۱۸ جلسه",
     slug: "supervision",
   },
+
   {
-    title: "بوتکمپ طراحی ساختمان",
+    title: "طراحی معماری و سازه",
     category: "طراحی",
     img: "/images/design.webp",
-    price: "۵,۵۰۰,۰۰۰",
+    price: "۲۵,۲۰۰,۰۰۰",
+    originalPrice: "۴۳,۲۰۰,۰۰۰",
+    duration: "۷۲ ساعت",
+    sessions: "۱۸ جلسه",
     slug: "design",
+  },
+
+  {
+    title: "نقشه‌کشی حرفه‌ای AutoCAD",
+    category: "نقشه‌کشی",
+    img: "/images/autocad.webp",
+    price: "۱۶,۸۰۰,۰۰۰",
+    originalPrice: "۲۸,۸۰۰,۰۰۰",
+    duration: "۴۸ ساعت",
+    sessions: "۱۲ جلسه",
+    slug: "autocad",
+  },
+
+  {
+    title: "ETABS کاربردی",
+    category: "طراحی",
+    img: "/images/etabs.webp",
+    price: "۲۵,۲۰۰,۰۰۰",
+    originalPrice: "۴۳,۲۰۰,۰۰۰",
+    duration: "۷۲ ساعت",
+    sessions: "۱۸ جلسه",
+    slug: "etabs",
+  },
+
+  {
+    title: "آموزش نرم‌افزار Revit General",
+    category: "BIM",
+    img: "/images/bim.webp",
+    price: "۹,۸۰۰,۰۰۰",
+    originalPrice: "۱۶,۸۰۰,۰۰۰",
+    duration: "۲۸ ساعت",
+    sessions: "۷ جلسه",
+    slug: "revit-general",
+  },
+
+  {
+    title: "آموزش نرم‌افزار Revit Structure",
+    category: "BIM",
+    img: "/images/bim.webp",
+    price: "۱۴,۰۰۰,۰۰۰",
+    originalPrice: "۲۴,۰۰۰,۰۰۰",
+    duration: "۴۰ ساعت",
+    sessions: "۱۰ جلسه",
+    slug: "revit-structure",
+  },
+
+  {
+    title: "آشنایی با نرم‌افزار Robot Structure",
+    category: "BIM",
+    img: "/images/bim.webp",
+    price: "۱۴,۰۰۰,۰۰۰",
+    originalPrice: "۲۴,۰۰۰,۰۰۰",
+    duration: "۴۰ ساعت",
+    sessions: "۱۰ جلسه",
+    slug: "robot-structure",
+  },
+
+  {
+    title: "دوره آموزش Dynamo",
+    category: "BIM",
+    img: "/images/bim.webp",
+    price: "۷,۰۰۰,۰۰۰",
+    originalPrice: "۱۲,۰۰۰,۰۰۰",
+    duration: "۲۰ ساعت",
+    sessions: "۵ جلسه",
+    slug: "dynamo",
+  },
+
+  {
+    title: "آموزش Revit MEP",
+    category: "BIM",
+    img: "/images/bim.webp",
+    price: "۷,۰۰۰,۰۰۰",
+    originalPrice: "۱۲,۰۰۰,۰۰۰",
+    duration: "۲۰ ساعت",
+    sessions: "۵ جلسه",
+    slug: "revit-mep",
+  },
+
+  {
+    title: "دوره آموزش Revit Architecture",
+    category: "BIM",
+    img: "/images/bim.webp",
+    price: "۱۲,۶۰۰,۰۰۰",
+    originalPrice: "۲۱,۶۰۰,۰۰۰",
+    duration: "۳۶ ساعت",
+    sessions: "۹ جلسه",
+    slug: "revit-architecture",
+  },
+
+  {
+    title: "آموزش کاربردی Navisworks",
+    category: "BIM",
+    img: "/images/bim.webp",
+    price: "۷,۰۰۰,۰۰۰",
+    originalPrice: "۱۲,۰۰۰,۰۰۰",
+    duration: "۲۰ ساعت",
+    sessions: "۵ جلسه",
+    slug: "navisworks",
   },
 ];
 
@@ -140,6 +250,9 @@ export default function Home() {
               category={course.category}
               img={course.img}
               price={course.price}
+              originalPrice={course.originalPrice}
+              duration={course.duration}
+              sessions={course.sessions}
               slug={course.slug}
             />
           ))}

@@ -13,10 +13,11 @@ const courses = {
     title: "بوتکمپ اجرای ساختمان",
     category: "اجرا",
     image: "/images/execution.webp",
-    duration: "۸ هفته",
+    duration: "۹۶ ساعت",
     sessions: "۲۴ جلسه",
     students: "ظرفیت محدود",
-    price: "۳,۹۰۰,۰۰۰",
+    price: "۳۳,۶۰۰,۰۰۰",
+    originalPrice: "۵۷,۶۰۰,۰۰۰",
     description:
       "آموزش عملی اجرای ساختمان از شروع پروژه تا مراحل نهایی، با تمرکز بر مهارت‌هایی که در پروژه واقعی به آن‌ها نیاز دارید.",
     features: [
@@ -33,10 +34,11 @@ const courses = {
     title: "نظارت و کنترل پروژه",
     category: "نظارت",
     image: "/images/supervision.webp",
-    duration: "۶ هفته",
+    duration: "۷۲ ساعت",
     sessions: "۱۸ جلسه",
     students: "ظرفیت محدود",
-    price: "۲,۹۰۰,۰۰۰",
+    price: "۲۵,۲۰۰,۰۰۰",
+    originalPrice: "۴۳,۲۰۰,۰۰۰",
     description:
       "مسیر عملی یادگیری نظارت ساختمان برای ورود به پروژه‌های واقعی و آشنایی با فرآیند کنترل اجرای عملیات ساختمانی.",
     features: [
@@ -53,10 +55,11 @@ const courses = {
     title: "طراحی معماری و سازه",
     category: "طراحی",
     image: "/images/design.webp",
-    duration: "۶ هفته",
+    duration: "۷۲ ساعت",
     sessions: "۱۸ جلسه",
     students: "ظرفیت محدود",
-    price: "۳,۵۰۰,۰۰۰",
+    price: "۲۵,۲۰۰,۰۰۰",
+    originalPrice: "۴۳,۲۰۰,۰۰۰",
     description:
       "آموزش فرآیند طراحی ساختمان با تمرکز بر مهارت‌های کاربردی، نرم‌افزارها و استانداردهای مورد نیاز بازار کار.",
     features: [
@@ -73,10 +76,11 @@ const courses = {
     title: "نقشه‌کشی حرفه‌ای AutoCAD",
     category: "نقشه‌کشی",
     image: "/images/autocad.webp",
-    duration: "۴ هفته",
+    duration: "۴۸ ساعت",
     sessions: "۱۲ جلسه",
     students: "ظرفیت محدود",
-    price: "۲,۲۰۰,۰۰۰",
+    price: "۱۶,۸۰۰,۰۰۰",
+    originalPrice: "۲۸,۸۰۰,۰۰۰",
     description:
       "یادگیری حرفه‌ای AutoCAD با تمرکز بر نقشه‌کشی ساختمان و مهارت‌هایی که مستقیماً در پروژه‌های واقعی استفاده می‌شوند.",
     features: [
@@ -89,34 +93,15 @@ const courses = {
     ],
   },
 
-  "revit-bim": {
-    title: "Revit و BIM",
-    category: "نقشه‌کشی",
-    image: "/images/bim.webp",
-    duration: "۴ هفته",
-    sessions: "۱۲ جلسه",
-    students: "ظرفیت محدود",
-    price: "۲,۹۰۰,۰۰۰",
-    description:
-      "آموزش کاربردی Revit و مفاهیم BIM با تمرکز بر مدل‌سازی اطلاعات ساختمان، تهیه نقشه و هماهنگی بین بخش‌های مختلف پروژه.",
-    features: [
-      "آشنایی با محیط و ابزارهای Revit",
-      "مدل‌سازی سه‌بعدی ساختمان",
-      "مدل‌سازی دیوار، کف، سقف و اجزای ساختمان",
-      "تهیه پلان، نما و مقاطع از مدل",
-      "آشنایی با مفاهیم BIM",
-      "هماهنگی مدل و نقشه‌های پروژه",
-    ],
-  },
-
   etabs: {
     title: "ETABS کاربردی",
     category: "طراحی",
     image: "/images/etabs.webp",
-    duration: "۶ هفته",
+    duration: "۷۲ ساعت",
     sessions: "۱۸ جلسه",
     students: "ظرفیت محدود",
-    price: "۲,۵۰۰,۰۰۰",
+    price: "۲۵,۲۰۰,۰۰۰",
+    originalPrice: "۴۳,۲۰۰,۰۰۰",
     description:
       "آموزش کاربردی مدل‌سازی و تحلیل سازه با ETABS از ایجاد مدل اولیه تا تحلیل و بررسی نتایج.",
     features: [
@@ -126,6 +111,153 @@ const courses = {
       "تحلیل سازه",
       "بررسی و تفسیر نتایج",
       "آشنایی با طراحی اعضای سازه",
+    ],
+  },
+
+  "revit-general": {
+    title: "آموزش نرم‌افزار Revit General",
+    category: "BIM",
+    image: "/images/bim.webp",
+    duration: "۲۸ ساعت",
+    sessions: "۷ جلسه",
+    students: "ظرفیت محدود",
+    price: "۹,۸۰۰,۰۰۰",
+    originalPrice: "۱۶,۸۰۰,۰۰۰",
+    description:
+      "آموزش کاربردی نرم‌افزار Revit برای آشنایی با محیط نرم‌افزار، مدل‌سازی و کار با مدل اطلاعاتی ساختمان.",
+    features: [
+      "آشنایی با محیط و ابزارهای Revit",
+      "اصول مدل‌سازی ساختمان",
+      "کار با عناصر معماری",
+      "تهیه نقشه از مدل",
+      "مدیریت اطلاعات مدل",
+      "آشنایی با مفاهیم BIM در Revit",
+    ],
+  },
+
+  "revit-structure": {
+    title: "آموزش نرم‌افزار Revit Structure",
+    category: "BIM",
+    image: "/images/bim.webp",
+    duration: "۴۰ ساعت",
+    sessions: "۱۰ جلسه",
+    students: "ظرفیت محدود",
+    price: "۱۴,۰۰۰,۰۰۰",
+    originalPrice: "۲۴,۰۰۰,۰۰۰",
+    description:
+      "آموزش Revit Structure با تمرکز بر مدل‌سازی سازه و تهیه اطلاعات و نقشه‌های سازه‌ای.",
+    features: [
+      "مدل‌سازی سازه در Revit",
+      "مدل‌سازی ستون و تیر",
+      "مدل‌سازی فونداسیون",
+      "کار با آرماتورها",
+      "تهیه نقشه‌های سازه",
+      "مدیریت اطلاعات مدل سازه",
+    ],
+  },
+
+  "robot-structure": {
+    title: "آشنایی با نرم‌افزار Robot Structure",
+    category: "BIM",
+    image: "/images/bim.webp",
+    duration: "۴۰ ساعت",
+    sessions: "۱۰ جلسه",
+    students: "ظرفیت محدود",
+    price: "۱۴,۰۰۰,۰۰۰",
+    originalPrice: "۲۴,۰۰۰,۰۰۰",
+    description:
+      "آشنایی کاربردی با نرم‌افزار Robot Structure برای مدل‌سازی، تحلیل و بررسی سازه.",
+    features: [
+      "آشنایی با محیط Robot",
+      "ایجاد مدل سازه",
+      "تعریف مصالح و مقاطع",
+      "بارگذاری سازه",
+      "تحلیل و بررسی نتایج",
+      "ارتباط فرآیند طراحی با مدل سازه",
+    ],
+  },
+
+  dynamo: {
+    title: "دوره آموزش Dynamo",
+    category: "BIM",
+    image: "/images/bim.webp",
+    duration: "۲۰ ساعت",
+    sessions: "۵ جلسه",
+    students: "ظرفیت محدود",
+    price: "۷,۰۰۰,۰۰۰",
+    originalPrice: "۱۲,۰۰۰,۰۰۰",
+    description:
+      "آموزش Dynamo برای اتوماسیون و ساده‌سازی فرآیندهای تکراری در محیط Revit.",
+    features: [
+      "آشنایی با محیط Dynamo",
+      "منطق و ساختار Nodeها",
+      "ساخت Workflowهای کاربردی",
+      "اتوماسیون فرآیندهای Revit",
+      "کار با اطلاعات مدل",
+      "ساخت اسکریپت‌های کاربردی",
+    ],
+  },
+
+  "revit-mep": {
+    title: "آموزش Revit MEP",
+    category: "BIM",
+    image: "/images/bim.webp",
+    duration: "۲۰ ساعت",
+    sessions: "۵ جلسه",
+    students: "ظرفیت محدود",
+    price: "۷,۰۰۰,۰۰۰",
+    originalPrice: "۱۲,۰۰۰,۰۰۰",
+    description:
+      "آموزش Revit MEP برای مدل‌سازی و هماهنگی سیستم‌های تأسیسات مکانیکی و الکتریکی ساختمان.",
+    features: [
+      "آشنایی با محیط Revit MEP",
+      "مدل‌سازی سیستم‌های تأسیساتی",
+      "کار با تجهیزات MEP",
+      "مدیریت اطلاعات مدل",
+      "هماهنگی تأسیسات با معماری و سازه",
+      "تهیه نقشه‌های تأسیساتی",
+    ],
+  },
+
+  "revit-architecture": {
+    title: "دوره آموزش Revit Architecture",
+    category: "BIM",
+    image: "/images/bim.webp",
+    duration: "۳۶ ساعت",
+    sessions: "۹ جلسه",
+    students: "ظرفیت محدود",
+    price: "۱۲,۶۰۰,۰۰۰",
+    originalPrice: "۲۱,۶۰۰,۰۰۰",
+    description:
+      "آموزش Revit Architecture با تمرکز بر مدل‌سازی معماری و تولید نقشه‌های معماری از مدل سه‌بعدی.",
+    features: [
+      "آشنایی با محیط Revit Architecture",
+      "مدل‌سازی معماری",
+      "مدل‌سازی دیوار، کف و سقف",
+      "مدل‌سازی در و پنجره",
+      "تهیه پلان، نما و مقطع",
+      "تهیه خروجی و مستندات معماری",
+    ],
+  },
+
+  navisworks: {
+    title: "آموزش کاربردی Navisworks",
+    category: "BIM",
+    image: "/images/bim.webp",
+    duration: "۲۰ ساعت",
+    sessions: "۵ جلسه",
+    students: "ظرفیت محدود",
+    price: "۷,۰۰۰,۰۰۰",
+    originalPrice: "۱۲,۰۰۰,۰۰۰",
+    description:
+      "آموزش کاربردی Navisworks برای بررسی، هماهنگی و مدیریت مدل‌های ساختمانی و شناسایی تداخلات.",
+    features: [
+      "آشنایی با محیط Navisworks",
+      "ترکیب مدل‌های مختلف پروژه",
+      "بررسی و کنترل مدل",
+      "شناسایی تداخلات",
+      "مدیریت و بررسی مدل BIM",
+      "تهیه گزارش و خروجی پروژه",
     ],
   },
 } as const;
@@ -217,18 +349,29 @@ export default async function CoursePage({
                 </div>
               </div>
 
-              <div className="mt-9 flex items-center gap-5">
+              {/* PRICE */}
+              <div className="mt-9 flex flex-wrap items-center gap-5">
                 <div>
                   <p className="text-xs text-white/40">
                     شهریه دوره
                   </p>
 
-                  <strong className="mt-1 block text-2xl text-white">
-                    {course.price}
-                    <span className="mr-1 text-sm font-normal text-white/50">
-                      تومان
+                  <div className="mt-1">
+                    <div className="text-sm text-white/35 line-through">
+                      {course.originalPrice} تومان
+                    </div>
+
+                    <strong className="block text-2xl text-white">
+                      {course.price}
+                      <span className="mr-1 text-sm font-normal text-white/50">
+                        تومان
+                      </span>
+                    </strong>
+
+                    <span className="mt-1 inline-block text-xs font-bold text-[#e88a84]">
+                      تخفیف تا پایان شهریور
                     </span>
-                  </strong>
+                  </div>
                 </div>
 
                 <Link
@@ -342,15 +485,26 @@ export default async function CoursePage({
 
             <div className="my-6 h-px bg-white/10" />
 
+            {/* SIDEBAR PRICE */}
             <div>
               <p className="text-xs text-white/40">
                 شهریه
               </p>
 
-              <div className="mt-1 text-2xl font-extrabold">
-                {course.price}
-                <span className="mr-1 text-xs font-normal text-white/50">
-                  تومان
+              <div className="mt-1">
+                <div className="text-sm text-white/35 line-through">
+                  {course.originalPrice} تومان
+                </div>
+
+                <div className="text-2xl font-extrabold">
+                  {course.price}
+                  <span className="mr-1 text-xs font-normal text-white/50">
+                    تومان
+                  </span>
+                </div>
+
+                <span className="mt-1 inline-block text-xs font-bold text-[#e88a84]">
+                  تخفیف تا پایان شهریور
                 </span>
               </div>
             </div>

@@ -329,13 +329,17 @@ export default function Home() {
                           </p>
 
                           <p className="mt-1 font-black">
-                            از آموزش تا پروژه واقعی
+                            از آموزش تا بازار کار
                           </p>
                         </div>
 
-                        <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#8f211d]">
+                        <Link
+                          href="/courses"
+                          className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#8f211d] transition hover:bg-[#751914]"
+                        >
                           <ArrowLeft size={20} />
-                        </div>
+
+                        </Link>
 
                       </div>
 
@@ -662,7 +666,7 @@ export default function Home() {
             </span>
 
             <h2 className="mt-2 text-3xl font-black">
-               وبلاگ خشت آکادمی
+              وبلاگ خشت آکادمی
             </h2>
 
           </div>

@@ -271,25 +271,25 @@ export default function Home() {
 
                 <HeroStat
                   icon={<Users />}
-                  value="+۲۰۰۰"
+                  value="+۳۵۰۰"
                   label="هنرجو"
                 />
 
                 <HeroStat
                   icon={<Clock3 />}
-                  value="+۵۰۰۰"
+                  value="+۵۰۰"
                   label="ساعت آموزش"
                 />
 
                 <HeroStat
                   icon={<Award />}
-                  value="+۳۰"
+                  value="+۱۰"
                   label="مدرس"
                 />
 
                 <HeroStat
                   icon={<BookOpen />}
-                  value="+۵۰"
+                  value="+۱۰"
                   label="دوره"
                 />
 

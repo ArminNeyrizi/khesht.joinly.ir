@@ -15,11 +15,14 @@ export function Header() {
           className="group flex items-center gap-3"
         >
           <div className="relative">
-            <div className="grid h-11 w-11 place-items-center rounded-xl bg-[#8f211d] text-xl font-black text-white shadow-sm transition duration-300 group-hover:scale-105 group-hover:rotate-1">
-              خ
+            <div className="grid h-11 w-11 place-items-center overflow-hidden rounded-xl bg-[#8f211d] shadow-sm transition duration-300 group-hover:scale-105 group-hover:rotate-1">
+              <img
+                src="/images/logo.webp"
+                alt="خشت آکادمی"
+                className="h-full w-full object-cover"
+              />
             </div>
 
-            <div className="absolute -bottom-1 -left-1 h-2 w-2 rounded-full bg-[#171717]" />
           </div>
 
           <div className="leading-none">
@@ -66,7 +69,7 @@ export function Header() {
           {/* CTA */}
           <Link
             href="/contact"
-            className="group flex h-10 items-center gap-2 rounded-xl bg-[#8f211d] px-4 text-sm font-bold text-white shadow-sm transition duration-300 hover:bg-[#751914] hover:shadow-md"
+            className="group flex h-10 items-center gap-2 rounded-xl bg-[#8f211d] px-4 text-sm font-bold !text-white shadow-sm transition duration-300 hover:bg-[#751914] hover:shadow-md"
           >
             مشاوره رایگان
 

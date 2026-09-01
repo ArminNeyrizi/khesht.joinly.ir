@@ -29,7 +29,7 @@ export function Footer() {
 
             <div className="mt-6 flex gap-3">
               <a
-                href="#"
+                href="https://www.instagram.com/kheshtacademy"
                 aria-label="Instagram"
                 className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white/60 transition hover:border-[#8f211d] hover:bg-[#8f211d] hover:text-white"
               >
@@ -37,7 +37,7 @@ export function Footer() {
               </a>
 
               <a
-                href="#"
+                href="https://t.me/kheshtacademy"
                 aria-label="Telegram"
                 className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white/60 transition hover:border-[#8f211d] hover:bg-[#8f211d] hover:text-white"
               >
@@ -69,7 +69,7 @@ export function Footer() {
                 نقشه‌کشی AutoCAD
               </FooterLink>
 
-              <FooterLink href="/courses/revit-bim">
+              <FooterLink href="/courses/revit-general">
                 Revit و BIM
               </FooterLink>
 

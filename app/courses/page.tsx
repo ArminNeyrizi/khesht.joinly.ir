@@ -56,7 +56,7 @@ const courses = [
   {
     title: "آموزش نرم‌افزار Revit General",
     category: "BIM",
-    img: "/images/bim.webp",
+    img: "/images/RevitGeneral.webp",
     price: "۹,۸۰۰,۰۰۰",
     originalPrice: "۱۶,۸۰۰,۰۰۰",
     duration: "۲۸ ساعت",
@@ -66,7 +66,7 @@ const courses = [
   {
     title: "آموزش نرم‌افزار Revit Structure",
     category: "BIM",
-    img: "/images/bim.webp",
+    img: "/images/RevitStructure.webp",
     price: "۱۴,۰۰۰,۰۰۰",
     originalPrice: "۲۴,۰۰۰,۰۰۰",
     duration: "۴۰ ساعت",
@@ -76,7 +76,7 @@ const courses = [
   {
     title: "آشنایی با نرم‌افزار Robot Structure",
     category: "BIM",
-    img: "/images/bim.webp",
+    img: "/images/RobotStructure.webp",
     price: "۱۴,۰۰۰,۰۰۰",
     originalPrice: "۲۴,۰۰۰,۰۰۰",
     duration: "۴۰ ساعت",
@@ -86,7 +86,7 @@ const courses = [
   {
     title: "دوره آموزش Dynamo",
     category: "BIM",
-    img: "/images/bim.webp",
+    img: "/images/Dynamo.webp",
     price: "۷,۰۰۰,۰۰۰",
     originalPrice: "۱۲,۰۰۰,۰۰۰",
     duration: "۲۰ ساعت",
@@ -96,7 +96,7 @@ const courses = [
   {
     title: "آموزش Revit MEP",
     category: "BIM",
-    img: "/images/bim.webp",
+    img: "/images/RevitMEP.webp",
     price: "۷,۰۰۰,۰۰۰",
     originalPrice: "۱۲,۰۰۰,۰۰۰",
     duration: "۲۰ ساعت",
@@ -106,7 +106,7 @@ const courses = [
   {
     title: "دوره آموزش Revit Architecture",
     category: "BIM",
-    img: "/images/bim.webp",
+    img: "/images/RevitArchitecture.webp",
     price: "۱۲,۶۰۰,۰۰۰",
     originalPrice: "۲۱,۶۰۰,۰۰۰",
     duration: "۳۶ ساعت",
@@ -116,7 +116,7 @@ const courses = [
   {
     title: "آموزش کاربردی Navisworks",
     category: "BIM",
-    img: "/images/bim.webp",
+    img: "/images/NavisWork.webp",
     price: "۷,۰۰۰,۰۰۰",
     originalPrice: "۱۲,۰۰۰,۰۰۰",
     duration: "۲۰ ساعت",

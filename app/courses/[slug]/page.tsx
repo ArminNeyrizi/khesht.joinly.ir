@@ -201,7 +201,7 @@ const courses = {
   "revit-mep": {
     title: "آموزش Revit MEP",
     category: "BIM",
-    image: "/images/bim.webp",
+    image: "/images/BIM.webp",
     duration: "۲۰ ساعت",
     sessions: "۵ جلسه",
     students: "ظرفیت محدود",
